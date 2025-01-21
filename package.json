@@ -1,8 +1,14 @@
 {
   "scripts": {
-    "start": "export $(cat .env) && node index.mjs"
+    "start": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 TELEGRAM_BOT_TOKEN=7322309097:AAG0ZTt14_bc_LPbqtFtaAKqYqyWwZnXwlQ node index.mjs"
   },
   "dependencies": {
-    "grammy": "^1.25.1"
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "grammy": "^1.25.1",
+    "http-proxy-agent": "^7.0.0",
+    "https-proxy-agent": "^7.0.2",
+    "socks-proxy-agent": "^8.0.5"
   }
 }
